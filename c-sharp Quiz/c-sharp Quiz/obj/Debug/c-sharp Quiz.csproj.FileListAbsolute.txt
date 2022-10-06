@@ -1,0 +1,18 @@
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.exe.config
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.exe
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.pdb
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c_sharp_Quiz.Form1.resources
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c_sharp_Quiz.Properties.Resources.resources
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.csproj.GenerateResource.Cache
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.exe
+c:\users\asus\documents\visual studio 2013\Projects\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.pdb
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.exe.config
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.exe
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.pdb
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.exe
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\bin\Debug\c-sharp Quiz.pdb
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c_sharp_Quiz.Form1.resources
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c_sharp_Quiz.Properties.Resources.resources
+C:\Users\Asus\Desktop\c-sharp Quiz\c-sharp Quiz\obj\Debug\c-sharp Quiz.csproj.GenerateResource.Cache
