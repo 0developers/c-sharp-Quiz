@@ -10,6 +10,8 @@ also don't forget about to modify public void answer !
 If you found the issue in the application , please let us know by reporting the issue in github!!
 
 last update : 9 october 2022 (1401/07/17)
+whats new ?
++changed some codes
 **#ScreenShots**
 
 ![2222](https://user-images.githubusercontent.com/115115225/194337031-20b5444e-8a73-458d-829a-860ee7692ded.PNG)
