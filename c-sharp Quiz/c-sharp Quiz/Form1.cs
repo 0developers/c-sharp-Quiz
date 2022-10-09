@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,34 +25,14 @@ namespace c_sharp_Quiz
         public int qusnum;
         public void question(int n)
         {
-            //questions
+            //questions are here .
             switch (n)
             {
                 case 1:
-                    label1.Text = "who made the C# ?";
-                    button1.Show();
-                    button2.Show();
-                    button3.Show();
-                    button4.Show();
-                    startbt.Hide();
-                    button1.Text = "microsoft";
-                    button2.Text = "oracle";
-                    button3.Text = "jet brains";
-                    button4.Text = "google";
-                    qusnum = 1;
+                    typequestion("who made the C# ?","microsoft","oracle","jet brains","google");
                     break;
                 case 2:
-                    label1.Text = "how to change the existing int variable in c# ?";
-                    button1.Show();
-                    button2.Show();
-                    button3.Show();
-                    button4.Show();
-                    startbt.Hide();
-                    button1.Text = "int a = 1;";
-                    button2.Text = "a 1;";
-                    button3.Text = "a = 1;";
-                    button4.Text = "a => 1";
-                    qusnum = 2;
+                    typequestion("how to change the existing int variable in c# ?", "int a =1;", "a 1;", "a = 1;", "a=> 1");
                     break;
             }
 
@@ -61,64 +41,58 @@ namespace c_sharp_Quiz
 
         public void answer(int qusn, int choise)
         {
+            //answers are here .
             switch (qusn)
             {
                 case 1:
-                    if (choise == 1)
-                    {
-                        score += 1;
-                    }
-                    question(2);
+       //(question,option user choosed ,the true answer , add to score)
+                    trueanswer(qusn,choise, 1, 1);
                     break;
                 case 2:
-                    if (choise == 3)
-                    {
-                        score += 1;
-                    }
+                    trueanswer(qusn, choise, 3, 1);
                     finished(true);
-
                     break;
             }
         }
-        public void finished(Boolean finish)
+        public void trueanswer(int Question ,int yourchoice, int trueanswer , int addscore)
         {
-            if (finish)
+            if (yourchoice == trueanswer) {
+                score += addscore;
+            }
+            question(Question+1);
+        }
+
+        public void typequestion(String q, String a1, String a2, String a3, String a4 ) {
+          
+                qusnum += 1;
+                label1.Text = q;
+                button1.Text = a1;
+                button2.Text = a2;
+                button3.Text = a3;
+                button4.Text = a4;
+                button1.Show();
+                button2.Show();
+                button3.Show();
+                button4.Show();
+                startbt.Hide();
+
+               
+
+               
+            
+
+        }
+        public void finished(Boolean isfinished)
+        {
+            if (isfinished)
             {
-                if (score == 2)
-                {
-                    label1.Text = "You answered all correctly ! (score :" + score.ToString() + ")";
-                    button1.Hide();
-                    button2.Hide();
-                    button3.Hide();
-                    button4.Hide();
-                    startbt.Show();
-                    startbt.Text = "try again";
-
-                }
-                else
-                {
-                    if (score == 1)
-                    {
-                        label1.Text = "You answered half of the questions correctly (score :" + score.ToString() + ")";
-                        button1.Hide();
-                        button2.Hide();
-                        button3.Hide();
-                        button4.Hide();
-                        startbt.Show();
-                        startbt.Text = "try again";
-                    }
-                    else
-                    {
-                        label1.Text = "fail !(score :" + score.ToString() + ")";
-                        button1.Hide();
-                        button2.Hide();
-                        button3.Hide();
-                        button4.Hide();
-                        startbt.Show();
-                        startbt.Text = "try again";
-                    }
-
-                }
+                button1.Hide();
+                button2.Hide();
+                button3.Hide();
+                button4.Hide();
+                startbt.Show();
+                label1.Text = "Your score is : (score : " + score.ToString() + " )";
+                startbt.Text = "Try again";
                 qusnum = 0;
                 score = 0;
             }
@@ -131,15 +105,8 @@ namespace c_sharp_Quiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (qusnum == 1)
-            {
-                answer(1, 1);
 
-            }
-            else if (qusnum == 2)
-            {
-                answer(2, 1);
-            }
+                answer(qusnum, 1);
         }
 
         private void button1_MouseDown(object sender, MouseEventArgs e)
@@ -159,43 +126,21 @@ namespace c_sharp_Quiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (qusnum == 1)
-            {
-                answer(1, 2);
-            }
-            else if (qusnum == 2)
-            {
-                answer(2, 2);
-            }
+
+                answer(qusnum, 2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (qusnum == 1)
-            {
-                answer(1, 3);
-            }
-            else if (qusnum == 2)
-            {
-                answer(2, 3);
-            }
+
+                answer(qusnum, 3);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (qusnum == 1)
-            {
-                answer(1, 4);
-            }
-            else if (qusnum == 2)
-            {
-                answer(2, 4);
-            }
-        }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+                answer(qusnum, 4);
+            }
         }
     }
-}
+
